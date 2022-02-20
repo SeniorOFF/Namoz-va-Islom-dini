@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=KoHo:wght@200&display=swap');
+
+/* SHRIFTKLAR 
+
+font-family: 'Dosis', sans-serif;
+font-family: 'Assistant', sans-serif;
+
+*/
+body{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu .logo{
+    display: flex;
+}
+.menu .logo img{
+    cursor: pointer;
+}
+.menu .logo .qidiruv{
+    position: relative;
+    margin: 10px 30px;
+}
+.menu .logo .qidiruv input{
+    position: absolute;
+    width: 450px;
+    padding: 13px;  
+    font-size: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid rgb(190, 190, 190);
+}
+.menu .logo .qidiruv .btn{
+    position: absolute;
+    left: 395px;
+    cursor: pointer;
+    width: 40px;
+    z-index: 1;
+    height: 46px;
+    overflow: hidden;
+    text-align: center;
+    padding: 6px;
+}
+.menu .logo .qidiruv .btn img{
+    width: 30px;
+    height: 30px;
+}
+.menu .link{
+    margin-top: 0px;
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+}
+.menu .link ul li{
+    list-style: none;
+    display: inline;
+}
+
+.menu .link ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-family: bahnschrift;
+    font-weight: 100;
+}
+.menu .link ul li a:hover{
+    font-weight: 200;
+    border-bottom: 1px solid black;
+    
+}
+.menu .bars img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    display: none;
+    cursor: pointer;
+}
+.menu .link .closes .fa{
+    margin: -290px -25px;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+@media (max-width: 1313px){
+    .menu .link{
+        position: absolute;
+        top: 14vh;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        width: 60%;
+        transform: translateX(100%);
+        z-index: 1;
+        background: rgb(37 37 37 / 93%);
+    }
+    .menu .bars img{
+        display: block;
+    }
+    .menu .link ul{
+        display: grid;
+        justify-items: center; 
+    }
+    .menu .link ul li{
+        padding: 30px;
+    }
+    .menu .link ul li a{
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        width: 100px;
+        border-radius: 30px;
+    }
+    .menu .link ul li a:hover{
+        border-bottom: 1px solid white;
+    }
+    .headblock{
+        height: 120vh;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+}
+    .headblock .blinfo{
+        margin: 15px;
+    }
+}
+@media (max-width: 670px){
+    .menu .logo .qidiruv input{
+        width: 250px;
+    }.menu .logo .qidiruv .btn{
+        left: 200px;
+    }
+    .header .hikmat{
+        width: 100px;
+    }
+}
+.header{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(../img/bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.header .hikmat{
+    width: 520px;
+    height: 250px;
+    margin-right: 100px;
+    margin-top: 100px;
+    border-radius: 10px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.507);
+}
+
+.header .hikmat h1{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header .hikmat h5{
+    color: rgb(219, 219, 219);
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 25px;
+
+}
+.header .hikmat img{
+    width: 130px;
+    overflow: hidden;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+.headblock{
+    width: 100%;
+    /* height: 260px; */
+    background: rgb(243, 243, 243);
+    display: flex;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+.headblock .blinfo{
+    width: 260px;
+    height: 140px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    border-radius: 10px;
+    z-index: 0;
+    border: none;
+    overflow: hidden;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.034) 0px 5px 90px;
+}
+.header .soat{
+    position: absolute;
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    top: 100px;
+    left: 50px;
+}
+.headblock .blinfo:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.headblock .blinfo .btn{
+    opacity: 0;
+    position: absolute;
+    width: 160px;
+    border-radius: 10px;
+    height: 100px;
+    transition: 0.3s ease-in-out;
+}
+.headblock .blinfo:hover .btn{
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+.headblock .blinfo .blimg{
+    margin: 20px 20px;
+    z-index: 1;
+}
+.headblock .blinfo .blimg img{
+    width: 90px;
+    height: 90px;
+}
+.headblock .blinfo .bltext{
+    margin: 20px -15px;
+    z-index: 1;
+}
+.headblock .blinfo .bltext h3{
+    font-family: bahnschrift;
+    color: rgb(30, 180, 0);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+.headblock .blinfo .bltext h5{
+    font-family: bahnschrift;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+.Farz{
+    width: 100%;
+    height: 100vh;
+    padding: 30px 50px;
+    background: rgb(248, 248, 248);
+}
+.Farz h1{
+    
+    font-size: 45px;
+    font-family: bahnschrift;
+    font-weight: 100;
+}
+.Farz h4{
+    font-size: 20px;
+    font-family: bahnschrift;
+    font-weight: 100;
+}
+.Farz .Nfarz{
+    display: flex;
+    padding: 40px;
+}
+.Farz .Nfarz .nbir{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Farz .Nfarz .nbir .nblock{
+    width: 150px;
+    height: 40px;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+}
